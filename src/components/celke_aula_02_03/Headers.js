@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, Un
 
 class Headers extends React.Component {
     render() {
+        const pessoa = "Jão";
         return (
             <div>
                 <Navbar
@@ -20,14 +21,14 @@ class Headers extends React.Component {
                             navbar
                         >
                             <NavItem>
-                                <NavLink href="#">
-                                    Componentes
-                                </NavLink>
+                            <NavLink href="#">
+                                Componentes
+                            </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">
-                                    GitHub
-                                </NavLink>
+                            <NavLink href="#">
+                                GitHub
+                            </NavLink>
                             </NavItem>
                             <UncontrolledDropdown
                             inNavbar
@@ -39,7 +40,7 @@ class Headers extends React.Component {
                             >
                                 Opções
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu>
                                 <DropdownItem>
                                 Opção 1
                                 </DropdownItem>
@@ -54,8 +55,8 @@ class Headers extends React.Component {
                             </UncontrolledDropdown>
                         </Nav>
                         <NavbarText>
-                            Usuário
-                        </NavbarText>=
+                            {pessoa}
+                        </NavbarText>
                     </Collapse>
                 </Navbar>
             </div>
